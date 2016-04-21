@@ -28,6 +28,10 @@
 </c:otherwise>
 </c:choose>
 
+<c:if test="${results.rowsAffected > 0}">
+	<div id="message">UPDATED. Rows Affected: ${results.rowsAffected}</div>
+</c:if>
+
 <!-- if there are results, print them in a table -->
 <c:if test="${!empty(results)}">
 	<table id="results-table">

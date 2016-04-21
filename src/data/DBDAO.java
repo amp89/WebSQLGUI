@@ -122,6 +122,7 @@ public class DBDAO {
 				
 				if (stmt != null) {
 					stmt.close();
+					System.out.println("Stat");
 				}
 				if (stmt != null) {
 					conn.close();
